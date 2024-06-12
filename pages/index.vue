@@ -2,10 +2,12 @@
 /**
  * @author Ia Gugunava
  */
+import NewSwiperCard from '~/components/NewSwiperCard.vue';
 </script>
 
 <template>
     <div>
+        <NewSwiperCard/>
     </div>
 </template>
 
