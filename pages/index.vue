@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import PopularsSwiper from '~/components/PopularsSwiper.vue';
+
 /**
  * @author Ia Gugunava
  */
@@ -6,6 +8,7 @@
 
 <template>
     <div>
+        <PopularsSwiper/>
     </div>
 </template>
 

@@ -2,7 +2,7 @@
 /**
  * @author Ia Gugunava
  */
-import StarsRating from './UiComponents/StarsRating.vue';
+import StarsRating from './StarsRating.vue';
 
 const data = {
     img: "https://movies-proxy.vercel.app/ipx/f_webp&s_400x600/tmdb/rXojaQcxVUubPLSrFV8PD4xdjrs.jpg",

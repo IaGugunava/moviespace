@@ -1,0 +1,20 @@
+body,
+html {
+    overflow-x: hidden;
+  &.modal-open {
+    overflow: hidden;
+
+    #__nuxt {
+      overflow-y: hidden;
+    }
+  }
+
+  @include maxq(tablet) {
+    overflow: hidden;
+    overscroll-behavior-y: none;
+  }
+}
+
+.container {
+    @include container;
+}

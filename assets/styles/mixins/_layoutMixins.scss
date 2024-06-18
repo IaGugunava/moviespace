@@ -1,0 +1,80 @@
+@mixin maxq($title) {
+
+    @if $title == desktop {
+        // 1440+
+        @media (max-width: 1919px) {
+            @content;
+        }
+    }
+    @if $title == desktop-sm {
+        // 1248+
+        @media (max-width: 1439px) {
+            @content;
+        }
+    }
+    @if $title == tablet {
+        // 984+
+        @media (max-width: 1247px) {
+            @content;
+        }
+    }
+
+    @if $title == mobile {
+        // 464+
+        @media (max-width: 983px) {
+            @content;
+        }
+    }
+
+    @if $title == mobile-sm {
+        // 463-
+        @media (max-width: 463px) {
+            @content;
+        }
+    }
+    @if $title == mobile-xs {
+        // 375-
+        @media (max-width: 374px) {
+            @content;
+        }
+    }
+}
+
+@mixin container($noPaddingOnBreakPoint: 0) {
+    max-width: 1920px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-left: 207px;
+    padding-right: 207px;
+
+    // 1248px
+    @include maxq(desktop) {
+        padding-left: 104px;
+        padding-right: 104px;
+    }
+
+    // 984px
+    @include maxq(tablet) {
+        padding-left: 104px;
+        padding-right: 104px;
+    }
+
+    // 464px
+    @include maxq(mobile) {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+    // 320px
+    @include maxq(mobile-sm) {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    @media (max-width: #{$noPaddingOnBreakPoint}px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
