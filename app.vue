@@ -1,5 +1,6 @@
 <template>
   <div>
+    <LayoutComponentsHeader/>
     <NuxtLayout>
       <NuxtPage/>
     </NuxtLayout>
