@@ -18,3 +18,8 @@ html {
 .container {
     @include container;
 }
+
+a{
+  text-decoration: none;
+  color: white;
+}

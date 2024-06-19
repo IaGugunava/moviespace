@@ -55,7 +55,7 @@ const inputModel = computed({
         transition: all 500ms ease-in-out;
 
         &:focus{
-            border: 2px solid $meteorGray;
+            outline: 2px solid $meteorGray;
         }
     }
 }

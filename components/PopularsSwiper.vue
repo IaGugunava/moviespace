@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import SwiperCard from './UiComponents/SwiperCard.vue';
-import Input from './UiComponents/Input.vue';
 
 /**
  * @author Ia Gugunava
