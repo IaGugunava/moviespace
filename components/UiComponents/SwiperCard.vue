@@ -12,7 +12,7 @@ const data = {
 </script>
 
 <template>
-    <div class="swiper-card">
+    <NuxtLink to="#" class="swiper-card">
         <div class="wrapper">
             <img class="swiper-card__image" :src="data.img"/>
         </div>
@@ -26,11 +26,12 @@ const data = {
 
             <p>{{ data.rating }}</p>
         </div>
-    </div>
+    </NuxtLink>
 </template>
 
 <style lang="scss">
 .swiper-card{
+    cursor: pointer;
     .wrapper{
         position: relative;
         height: auto;
