@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import SwiperCard from './UiComponents/SwiperCard.vue';
+import Input from './UiComponents/Input.vue';
 
 /**
  * @author Ia Gugunava
  */
+
 </script>
 
 <template>
@@ -11,7 +13,6 @@ import SwiperCard from './UiComponents/SwiperCard.vue';
         <div class="container">
             <h3 class="populars-swiper__title">popular movies</h3>
             <Swiper
-            :modules="[SwiperNavigation]"
             :slides-per-view="5"
             :space-between="50"
             >
@@ -26,8 +27,9 @@ import SwiperCard from './UiComponents/SwiperCard.vue';
 <style lang="scss">
 .populars-swiper{
     margin: 70px 0;
+    color: white;
     &__title{
-        // color: ;
+        color: $starlightWhite;
         font-size: 44px;
     }
 
