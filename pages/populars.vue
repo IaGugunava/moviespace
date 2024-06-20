@@ -2,12 +2,16 @@
 /**
  * @author Ia Gugunava
  */
-import PopularsSwiper from '../components/PopularsSwiper.vue'
+ import DefaultList from '~/components/DefaultList/DefaultList.vue';
+ import { data } from '../data/movies'
+
+const popularData = data.slice(10, 20)
+
 </script>
 
 <template>
     <div>
-        <PopularsSwiper/>
+        <DefaultList title="popular movies" :contentData="popularData"/>
     </div>
 </template>
 

@@ -46,7 +46,7 @@ const inputModel = computed({
         color: white;
         border-radius: 8px;
         border: none;
-        background-color: $midnightBlue;
+        background-color: #000;
         padding: 12px;
         width: 100%;
         height: 100%;
@@ -55,7 +55,11 @@ const inputModel = computed({
         transition: all 500ms ease-in-out;
 
         &:focus{
+<<<<<<< HEAD
+            outline: 2px solid $midnightBlue;
+=======
             outline: 2px solid $meteorGray;
+>>>>>>> 9dd4fff5c72f473cebffff10bdf3125e2640cbf4
         }
     }
 }
