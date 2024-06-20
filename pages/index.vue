@@ -1,14 +1,18 @@
 <script setup lang="ts">
-import PopularsSwiper from '~/components/PopularsSwiper.vue';
-
 /**
  * @author Ia Gugunava
  */
+import DefaultSlider from '~/components/DefaultSlider/DefaultSlider.vue';
+import Banner from '~/components/Banner/Banner.vue';
+import { data } from '../data/movies'
+
+const popularData = data.slice(10, 20)
 </script>
 
 <template>
     <div>
-        <PopularsSwiper/>
+        <Banner/>
+        <DefaultSlider :contentData="popularData"/>
     </div>
 </template>
 

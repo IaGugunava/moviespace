@@ -4,33 +4,32 @@
  */
 import StarsRating from './StarsRating.vue';
 
-const data = {
-    img: "https://movies-proxy.vercel.app/ipx/f_webp&s_400x600/tmdb/rXojaQcxVUubPLSrFV8PD4xdjrs.jpg",
-    title: "hazbin hotel",
-    rating: 9
-}
+const props = defineProps<{
+  data: any
+}>();
 </script>
 
 <template>
-    <div class="swiper-card">
+    <NuxtLink to="#" class="swiper-card">
         <div class="wrapper">
-            <img class="swiper-card__image" :src="data.img"/>
+            <img class="swiper-card__image" :src="data?.poster"/>
         </div>
 
         <div class="swiper-card__title">
-            {{ data.title }}
+            {{ data?.name }}
         </div>
 
         <div class="swiper-card__rating">
-            <StarsRating :value="data.rating"/>
+            <StarsRating :value="data?.rating"/>
 
-            <p>{{ data.rating }}</p>
+            <p>{{ data?.rating }}</p>
         </div>
-    </div>
+    </NuxtLink>
 </template>
 
 <style lang="scss">
 .swiper-card{
+    cursor: pointer;
     .wrapper{
         position: relative;
         height: auto;

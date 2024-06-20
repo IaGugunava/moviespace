@@ -12,7 +12,7 @@ const props = withDefaults(
 )
 
 const style = computed(() => ({
-  'clip-path': `inset(0 ${(10 - props.value) * 10}% 0 0)`,
+  'clip-path': `inset(0 ${(5 - props.value) * 5}% 0 0)`,
 }))
 </script>
 

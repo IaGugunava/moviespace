@@ -42,7 +42,7 @@
 
 @mixin container($noPaddingOnBreakPoint: 0) {
     max-width: 1920px;
-    width: 100%;
+    // width: 100%;
     margin-left: auto;
     margin-right: auto;
     

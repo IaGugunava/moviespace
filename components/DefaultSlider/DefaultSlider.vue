@@ -1,17 +1,21 @@
 <script setup lang="ts">
-import SwiperCard from './UiComponents/SwiperCard.vue';
-
+import SwiperCard from '../UiComponents/SwiperCard.vue';
 /**
  * @author Ia Gugunava
  */
+
+defineProps<{
+  contentData: any;
+  title?: string;
+}>();
+
 </script>
 
 <template>
     <div class="populars-swiper">
         <div class="container">
-            <h3 class="populars-swiper__title">popular movies</h3>
+            <h3 class="populars-swiper__title" v-if="title">{{ title }}</h3>
             <Swiper
-            :modules="[SwiperNavigation]"
             :slides-per-view="5"
             :space-between="50"
             :watch-overflow="true"
@@ -27,8 +31,8 @@ import SwiperCard from './UiComponents/SwiperCard.vue';
                 }
             }"
             >
-            <SwiperSlide v-for="slide in 10" :key="slide">
-                <SwiperCard/>
+            <SwiperSlide v-for="slide in contentData" :key="slide.id">
+                <SwiperCard :data="slide"/>
             </SwiperSlide>
             </Swiper>
         </div>
@@ -38,8 +42,9 @@ import SwiperCard from './UiComponents/SwiperCard.vue';
 <style lang="scss">
 .populars-swiper{
     margin: 70px 0;
+    color: white;
     &__title{
-        // color: ;
+        color: $starlightWhite;
         font-size: 44px;
     }
 

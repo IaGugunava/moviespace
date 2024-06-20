@@ -3,9 +3,6 @@
  * @author Ia Gugunava
  */
 import Input from '~/components/UiComponents/Input.vue';
-import { useRouter } from 'vue-router';
-
-const router = useRouter()
 
 const searchText:Ref<string> = ref("");
 
@@ -15,25 +12,22 @@ const handleSearch = async (value: string) => {
     setTimeout(() => {
         searchText.value = "";
     }, 1000)
-
-    router.push({ path: '/search', query: { searchText: `${searchText.value}` } })
-
 }
 </script>
 
 <template>
     <div class="header">
         <!-- logo -->
-        <NuxtLink to="/" class="header__logo">
-            <img src="../../../assets/images/moviespacelogo.png"/>
-        </NuxtLink>
+        <div class="header__logo">
+
+        </div>
 
         <!-- other stuff -->
          <div class="header__content">
             <NuxtLink class="header__link" to="/populars">popular</NuxtLink>
             <NuxtLink class="header__link" to="/movies">movies</NuxtLink>
             <NuxtLink class="header__link" to="/tv-series">tv series</NuxtLink>
-            <Input placeholder="Search..." :modelValue="searchText" @update:modelValue="(e: string) => searchText = e" @keydown.enter="handleSearch(searchText)"/>
+            <Input :modelValue="searchText" @update:modelValue="(e: string) => searchText = e" @keydown.enter="handleSearch(searchText)"/>
          </div>
     </div>
 </template>
@@ -48,16 +42,6 @@ const handleSearch = async (value: string) => {
     position: relative;
     top: 0;
     left: 0;
-
-    &__logo{
-        height: 50px;
-        width: 100px;
-
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
 
     &__content{
         display: flex;
