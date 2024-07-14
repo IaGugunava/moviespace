@@ -1,20 +1,27 @@
 <script setup lang="ts">
-import SwiperCard from '../UiComponents/SwiperCard.vue';
 /**
  * @author Ia Gugunava
  */
+import SwiperCard from '../UiComponents/SwiperCard.vue';
+import Button from '../UiComponents/Button.vue';
 
 defineProps<{
   contentData: any;
   title?: string;
+  buttonLink?: string;
 }>();
 
 </script>
 
 <template>
-    <div class="populars-swiper">
+    <div class="default-slider">
         <div class="container">
-            <h3 class="populars-swiper__title" v-if="title">{{ title }}</h3>
+            <div class="default-slider__header">
+                <h3 class="default-slider__title" v-if="title">{{ title }}</h3>
+                <NuxtLink v-if="buttonLink" :to="buttonLink">
+                    <Button title="see more"/>
+                </NuxtLink>
+            </div>
             <Swiper
             :slides-per-view="5"
             :space-between="50"
@@ -26,23 +33,34 @@ defineProps<{
                     spaceBetween: 20
                 },
                 1360: {
-                    slidesPerView: 5,
-                    spaceBetween: 50
+                    slidesPerView: 4,
+                    spaceBetween: 30
+                },
+                1680: {
+                    slidesPerView: 4,
+                    spaceBetween: 30
                 }
             }"
             >
-            <SwiperSlide v-for="slide in contentData" :key="slide.id">
-                <SwiperCard :data="slide"/>
-            </SwiperSlide>
+                <SwiperSlide v-for="slide in contentData" :key="slide.id">
+                    <SwiperCard :data="slide"/>
+                </SwiperSlide>
             </Swiper>
         </div>
     </div>
 </template>
 
 <style lang="scss">
-.populars-swiper{
+.default-slider{
     margin: 70px 0;
     color: white;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     &__title{
         color: $starlightWhite;
         font-size: 44px;
@@ -53,7 +71,7 @@ defineProps<{
     }
 
     .swiper-slide {
-        opacity: 0.25;
+        opacity: 0.4;
     }
     .swiper-slide-visible {
         opacity: 1;
@@ -104,6 +122,6 @@ defineProps<{
 // .swiper-button-prev::after {
 //   content: "";
 // }
-
+// moviespace578!
 }
 </style>

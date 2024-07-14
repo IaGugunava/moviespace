@@ -3,6 +3,7 @@
  * @author Ia Gugunava
  */
 import StarsRating from './StarsRating.vue';
+import { getSingleUrl } from '~/composables/helpers';
 
 const props = defineProps<{
   data: any
@@ -10,7 +11,7 @@ const props = defineProps<{
 </script>
 
 <template>
-    <NuxtLink to="#" class="swiper-card">
+    <div @click="getSingleUrl(data)" class="swiper-card">
         <div class="wrapper">
             <img class="swiper-card__image" :src="data?.poster"/>
         </div>
@@ -24,7 +25,7 @@ const props = defineProps<{
 
             <p>{{ data?.rating }}</p>
         </div>
-    </NuxtLink>
+    </div>
 </template>
 
 <style lang="scss">

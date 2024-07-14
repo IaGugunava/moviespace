@@ -8,17 +8,9 @@ import { useRoute } from 'vue-router';
 
 const route = useRoute()
 
-// const showsData = data.filter((el) => el.movieType === "series").slice(20, 30)
-
 const searched = computed(() => route.query.searchText)
 
 const foundData = ref();
-
-// const foundData = computed(async () => {
-//     setTimeout(() => {
-//         return data.filter((el) => el.name.includes(searched.value))
-//     }, 500)
-// })
 
 const searchForFilms = async (text: string) => {
     setTimeout(() => {

@@ -5,7 +5,6 @@
 import DefaultList from '~/components/DefaultList/DefaultList.vue';
 import { data } from '../data/movies'
 
-// console.log(data.)
 const moviesData = data.filter((el) => el.movieType === "movie").slice(20, 30)
 
 </script>
