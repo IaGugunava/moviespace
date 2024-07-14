@@ -10,14 +10,11 @@ const router = useRouter()
 const searchText:Ref<string> = ref("");
 
 const handleSearch = async (value: string) => {
-    console.log(value, '~~~~~~~~~~~~~~~~~~~');
+    router.push({ path: '/search', query: { searchText: `${searchText.value}` } })
 
     setTimeout(() => {
         searchText.value = "";
     }, 1000)
-
-    router.push({ path: '/search', query: { searchText: `${searchText.value}` } })
-
 }
 </script>
 
@@ -33,6 +30,7 @@ const handleSearch = async (value: string) => {
             <NuxtLink class="header__link" to="/populars">popular</NuxtLink>
             <NuxtLink class="header__link" to="/movies">movies</NuxtLink>
             <NuxtLink class="header__link" to="/tv-series">tv series</NuxtLink>
+            <NuxtLink class="header__link" to="/genres">genres</NuxtLink>
             <Input placeholder="Search..." :modelValue="searchText" @update:modelValue="(e: string) => searchText = e" @keydown.enter="handleSearch(searchText)"/>
          </div>
     </div>
@@ -43,7 +41,7 @@ const handleSearch = async (value: string) => {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba($color: #aa80f2, $alpha: 0.7);
+    background-color: rgba($color: #cccbf5, $alpha: 0.7);
     padding: 30px;
     position: relative;
     top: 0;

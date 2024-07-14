@@ -3,16 +3,19 @@
  * @author Ia Gugunava
  */
 import DefaultSlider from '~/components/DefaultSlider/DefaultSlider.vue';
-import Banner from '~/components/Banner/Banner.vue';
 import { data } from '../data/movies'
 
-const popularData = data.slice(10, 20)
+const popularData = data.slice(10, 20);
+const showsData = data.filter((el) => el.movieType === "series").slice(20, 30)
+const moviesData = data.filter((el) => el.movieType === "movie").slice(20, 30)
+
 </script>
 
 <template>
     <div>
-        <Banner/>
-        <DefaultSlider :contentData="popularData"/>
+        <DefaultSlider title="popoular" buttonLink="/populars" :contentData="popularData"/>
+        <DefaultSlider title="tv series" buttonLink="/tv-series" :contentData="showsData"/>
+        <DefaultSlider title="movies" buttonLink="/movies" :contentData="moviesData"/>
     </div>
 </template>
 

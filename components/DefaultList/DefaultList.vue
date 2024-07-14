@@ -39,6 +39,11 @@ defineProps<{
         display: grid;
         grid-gap: 50px;
         grid-template-columns: repeat(5, minmax(0, 1fr));
+
+        @include maxq(desktop-sm){
+            grid-gap: 30px;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
     }
 }
 </style>
