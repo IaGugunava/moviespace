@@ -1,16 +1,15 @@
 <script setup lang="ts">
-
 /**
  * @author Ia Gugunava
  */
 </script>
 
 <template>
-    <NuxtLink class="banner">
-        <div to="#" class="container">
-
+    <div class="banner">
+        <div class="container">
+            test
         </div>
-    </NuxtLink>
+    </div>
 </template>
 
 <style lang="scss">
