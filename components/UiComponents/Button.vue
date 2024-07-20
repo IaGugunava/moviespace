@@ -24,6 +24,13 @@ defineProps<{
     border-radius: 25px;
     border: 2px solid $nebulaPurple;
     background: linear-gradient(-90deg, rgba($nebulaPurple, 0.5) 0%, rgba(1, 1, 22, .95) 100%) 0 0 no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span{
+        color: $starlightWhite;
+    }
 
     &--active{
         background: $nebulaPurple;

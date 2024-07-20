@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   css: ["~/assets/styles/main.scss"],
   devtools: { enabled: true },
-  modules: ['nuxt-swiper'],
+  modules: ['nuxt-swiper', "@nuxtjs/supabase"],
   vite: {
     assetsInclude: ["**/*.html"],
     css: {
@@ -16,4 +16,15 @@ export default defineNuxtConfig({
       },
     },
   },
+  supabase: {
+    redirect: false,
+    redirectOptions: {
+      login: '/login',
+      callback: '/confirm',
+      include: undefined,
+      exclude: [],
+      cookieRedirect: false,
+    }
+  
+  }
 })
