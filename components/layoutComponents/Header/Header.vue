@@ -4,6 +4,10 @@
  */
 import Input from '~/components/UiComponents/Input.vue';
 import { useRouter } from 'vue-router';
+import type { Database } from '~/types/database.types';
+
+const client = useSupabaseClient<Database>()
+const user = useSupabaseUser();
 
 const router = useRouter()
 
@@ -15,6 +19,18 @@ const handleSearch = async (value: string) => {
     setTimeout(() => {
         searchText.value = "";
     }, 1000)
+}
+
+const logout = async () => {
+    try{
+        const { error } = await client.auth.signOut();
+        if(error) throw error;
+        router.push("/")
+    } catch(error){
+        console.log(error);
+    } finally{
+        console.log("~")
+    }
 }
 </script>
 
@@ -32,6 +48,8 @@ const handleSearch = async (value: string) => {
             <NuxtLink class="header__link" to="/tv-series">tv series</NuxtLink>
             <NuxtLink class="header__link" to="/genres">genres</NuxtLink>
             <Input placeholder="Search..." :modelValue="searchText" @update:modelValue="(e: string) => searchText = e" @keydown.enter="handleSearch(searchText)"/>
+            <NuxtLink v-if="!user" class="header__link" to="/login">login</NuxtLink>
+            <UiComponentsButton v-if="user" title="log out" @click="logout"/>
          </div>
     </div>
 </template>

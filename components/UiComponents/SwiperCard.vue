@@ -5,9 +5,34 @@
 import StarsRating from './StarsRating.vue';
 import { getSingleUrl } from '~/composables/helpers';
 
+import type { Database } from '~/types/database.types';
+
 const props = defineProps<{
   data: any
 }>();
+
+const client = useSupabaseClient<Database>();
+const user = useSupabaseUser();
+
+const addMovie = async () => {
+    console.log(props?.data?.id)
+
+    // const { data, error } = await client.from('movies').upsert({
+    //     user_id: user.value.id,
+    //     name: "favorites",
+    //     movie_id: props.data?.id
+    // })
+
+    // if(error){
+    //     console.log(error);
+    // }
+    
+}
+
+const emit = defineEmits<{
+  (e: "addMovie"): void;
+}>();
+
 </script>
 
 <template>
@@ -25,6 +50,8 @@ const props = defineProps<{
 
             <p>{{ data?.rating }}</p>
         </div>
+
+        <UiComponentsButton class="swiper-card__button" v-if="user" title="add movie" @click.stop="addMovie"/>
     </div>
 </template>
 
@@ -36,6 +63,10 @@ const props = defineProps<{
         height: auto;
         padding-top: calc(100% / (232 / 376));
         overflow: hidden;
+
+        @include maxq(tablet){
+            padding-top: calc(100% / (232 / 300));
+        }
     }
     &__image{
         position: absolute;

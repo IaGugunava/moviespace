@@ -19,13 +19,13 @@ const searchForFilms = async (text: string) => {
 }
 
 onMounted(() => {
-    searchForFilms(searched.value)
+    searchForFilms(searched.value?.toString()!)
 })
 
 watch(
     () => searched,
     (n) => {
-        searchForFilms(n.value);
+        searchForFilms(n.value?.toString()!);
     }, 
     {
         deep: true,

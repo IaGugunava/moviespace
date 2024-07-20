@@ -6,10 +6,12 @@
   defineProps<{
     modelValue?: string | null | Object;
     placeholder?: string | null;
+    inputType: "email" | "number" | "password" | "text";
   }>(),
   {
     modelValue: "",
-    placeholder: ""
+    placeholder: "",
+    inputType: "text"
   }
 );
 
@@ -32,6 +34,7 @@ const inputModel = computed({
         <input
         class="custom-input__input"
         v-model="inputModel"
+        :type="inputType"
         :placeholder="placeholder"
         />
     </div>
@@ -41,6 +44,7 @@ const inputModel = computed({
 .custom-input{
     overflow: hidden;
     border-radius: 8px;
+    border: 1px solid $starlightWhite;
     
     &__input{
         color: white;

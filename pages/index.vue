@@ -7,7 +7,7 @@ import { data } from '../data/movies'
 
 const popularData = data.slice(10, 20);
 const showsData = data.filter((el) => el.movieType === "series").slice(20, 30)
-const moviesData = data.filter((el) => el.movieType === "movie").slice(20, 30)
+const moviesData = data.filter((el) => el.movieType === "movie").slice(10, 20)
 
 </script>
 
