@@ -3,7 +3,7 @@
  * @author Ia Gugunava
  */
 import MovieInner from '~/components/MovieInner/MovieInner.vue';
-import { data } from '../data/movies'
+import { movies } from '../data/movies'
 import { useRoute } from 'vue-router';
 
 const route = useRoute()
@@ -14,7 +14,7 @@ const innerData = ref();
 
 const getInnerData = async (id: number) => {
     setTimeout(() => {
-        innerData.value = data.filter((el) => el.id === id)
+        innerData.value = movies.filter((el) => el.id === id)
     }, 500)
 }
 

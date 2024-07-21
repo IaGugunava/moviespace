@@ -3,14 +3,14 @@
  * @author Ia Gugunava
  */
 import DefaultList from '~/components/DefaultList/DefaultList.vue';
-import { data } from '../data/movies'
+import { movies } from '../data/movies'
 
-const showsData = data.filter((el) => el.movieType === "series").slice(20, 30)
+const showsData = movies.filter((el) => el.movieType === "series").slice(20, 30)
 </script>
 
 <template>
     <div>
-        <DefaultList title="tv series" :contentData="showsData"/>
+        <DefaultList title="სერიალები" :contentData="showsData"/>
     </div>
 </template>
 

@@ -3,7 +3,7 @@
  * @author Ia Gugunava
  */
 import DefaultList from '~/components/DefaultList/DefaultList.vue';
-import { data } from '../data/movies';
+import { movies } from '../data/movies';
 import { useRoute } from 'vue-router';
 
 const route = useRoute()
@@ -14,7 +14,7 @@ const foundData = ref();
 
 const searchForFilms = async (text: string) => {
     setTimeout(() => {
-        foundData.value = data.filter((el) => el.name.includes(text))
+        foundData.value = movies.filter((el) => el.name.includes(text))
     }, 500)
 }
 
@@ -35,7 +35,7 @@ watch(
 
 <template>
     <div>
-        <DefaultList :title="`results for: ${searched}`" :contentData="foundData"/>
+        <DefaultList :title="`შედეგები: ${searched}`" :contentData="foundData"/>
     </div>
 </template>
 

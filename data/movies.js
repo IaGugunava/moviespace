@@ -1,4 +1,4 @@
-export const data = [
+export const movies = [
     {
         "id": 1,
         "imdb": null,

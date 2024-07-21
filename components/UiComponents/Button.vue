@@ -27,9 +27,14 @@ defineProps<{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 500ms ease-in-out;
 
     span{
         color: $starlightWhite;
+    }
+
+    &:hover{
+        background: $nebulaPurple;
     }
 
     &--active{

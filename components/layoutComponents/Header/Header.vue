@@ -43,12 +43,13 @@ const logout = async () => {
 
         <!-- other stuff -->
          <div class="header__content">
-            <NuxtLink class="header__link" to="/populars">popular</NuxtLink>
-            <NuxtLink class="header__link" to="/movies">movies</NuxtLink>
-            <NuxtLink class="header__link" to="/tv-series">tv series</NuxtLink>
-            <NuxtLink class="header__link" to="/genres">genres</NuxtLink>
-            <Input placeholder="Search..." :modelValue="searchText" @update:modelValue="(e: string) => searchText = e" @keydown.enter="handleSearch(searchText)"/>
-            <NuxtLink v-if="!user" class="header__link" to="/login">login</NuxtLink>
+            <NuxtLink class="header__link" to="/populars">პოპულარული</NuxtLink>
+            <NuxtLink class="header__link" to="/movies">ფილმები</NuxtLink>
+            <NuxtLink class="header__link" to="/tv-series">სერიალები</NuxtLink>
+            <NuxtLink class="header__link" to="/genres">ჟანრები</NuxtLink>
+            <NuxtLink class="header__link" to="/profile">პროფილი</NuxtLink>
+            <Input placeholder="ძებნა..." :modelValue="searchText" @update:modelValue="(e: string) => searchText = e" @keydown.enter="handleSearch(searchText)"/>
+            <NuxtLink v-if="!user" class="header__link" to="/login">შესვლა</NuxtLink>
             <UiComponentsButton v-if="user" title="log out" @click="logout"/>
          </div>
     </div>

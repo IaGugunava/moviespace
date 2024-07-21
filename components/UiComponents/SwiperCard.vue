@@ -3,19 +3,24 @@
  * @author Ia Gugunava
  */
 import StarsRating from './StarsRating.vue';
+import AddingModal from '../AddingModal/AddingModal.vue';
 import { getSingleUrl } from '~/composables/helpers';
-
 import type { Database } from '~/types/database.types';
 
 const props = defineProps<{
-  data: any
+  data: any,
+  buttonTitle?: string
 }>();
 
-const client = useSupabaseClient<Database>();
+const client = useSupabaseClient<Database>()
 const user = useSupabaseUser();
 
-const addMovie = async () => {
+const isModalOpen = ref(false);
+
+const deleteMovie = async () => {
     console.log(props?.data?.id)
+
+    await client.from('movies').delete().match({ movie_id: props?.data?.id })
 
     // const { data, error } = await client.from('movies').upsert({
     //     user_id: user.value.id,
@@ -29,9 +34,11 @@ const addMovie = async () => {
     
 }
 
-const emit = defineEmits<{
-  (e: "addMovie"): void;
-}>();
+// console.log(user.value?.id, "~~~~~~~~~~~~~~~~~~~~");
+
+// const emit = defineEmits<{
+//   (e: "addMovie"): void;
+// }>();
 
 </script>
 
@@ -50,9 +57,17 @@ const emit = defineEmits<{
 
             <p>{{ data?.rating }}</p>
         </div>
-
-        <UiComponentsButton class="swiper-card__button" v-if="user" title="add movie" @click.stop="addMovie"/>
+        <UiComponentsButton class="swiper-card__button" v-if="user && !buttonTitle" title="დაამატე ფილმი" @click.stop="isModalOpen = true"/>
+        <UiComponentsButton class="swiper-card__button" v-if="user && buttonTitle" :title="buttonTitle" @click.stop="deleteMovie"/>
     </div>
+
+    <Teleport to="body">
+        <Transition name="fade">
+            <UiComponentsBaseModal v-if="isModalOpen" title="დაამატე ფილმი" @close="isModalOpen = false">
+                <AddingModal :user-id="user?.id" :movie-id="data?.id" @close-modal="isModalOpen = false"/>
+            </UiComponentsBaseModal>
+        </Transition>
+    </Teleport>
 </template>
 
 <style lang="scss">
@@ -61,7 +76,7 @@ const emit = defineEmits<{
     .wrapper{
         position: relative;
         height: auto;
-        padding-top: calc(100% / (232 / 376));
+        padding-top: calc(100% / (232 / 346));
         overflow: hidden;
 
         @include maxq(tablet){

@@ -3,9 +3,9 @@
  * @author Ia Gugunava
  */
 import DefaultList from '~/components/DefaultList/DefaultList.vue';
-import { data } from '../data/movies'
+import { movies } from '../data/movies'
 
-const moviesData = computed(() => data.filter((el) => el.movieType === "movie").slice(20, 30))
+const moviesData = computed(() => movies.filter((el) => el.movieType === "movie").slice(20, 30))
 
 // const handleLoadMore = () => {
 
@@ -15,7 +15,7 @@ const moviesData = computed(() => data.filter((el) => el.movieType === "movie").
 
 <template>
     <div class="movies">
-        <DefaultList title="movies" :contentData="moviesData"/>
+        <DefaultList title="ფილმები" :contentData="moviesData"/>
 
         <!-- <UiComponentsButton class="movies__button" title="load more" /> -->
     </div>

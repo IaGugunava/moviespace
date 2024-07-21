@@ -45,20 +45,20 @@ const handleLogin = async () => {
 
 <template>
     <div class="login">
-        <h3 class="login__title">Login</h3>
+        <h3 class="login__title">შესვლა</h3>
 
         <div class="login__form">
             <div class="login__inputs">
-                <p class="login__label">Email</p>
+                <p class="login__label">იმეილი</p>
                 <Input input-type="email" :model-value="email" @update:model-value="(e: any) => email = e"/>
             </div>
 
             <div class="login__inputs">
-                <p class="login__label">Password</p>
+                <p class="login__label">პაროლი</p>
                 <Input input-type="password" :model-value="password" @update:model-value="(e: any) => password = e"/>
             </div>
 
-            <UiComponentsButton class="login__button" title="login" @click="handleLogin"/>
+            <UiComponentsButton class="login__button" title="შესვლა" @click="handleLogin"/>
         </div>
         <p v-if="message" class="login__message" :class="[{'login__message--success': success}, {'login__message--error': !success}]">{{ message }}</p>
 
