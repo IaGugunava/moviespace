@@ -9,6 +9,7 @@ defineProps<{
   contentData: any;
   title?: string;
   buttonLink?: string;
+  buttonTitle?: string;
 }>();
 
 </script>
@@ -19,7 +20,7 @@ defineProps<{
             <div class="default-slider__header">
                 <h3 class="default-slider__title" v-if="title">{{ title }}</h3>
                 <NuxtLink v-if="buttonLink" :to="buttonLink">
-                    <Button title="see more"/>
+                    <Button title="ნახე მეტი"/>
                 </NuxtLink>
             </div>
             <Swiper
@@ -43,7 +44,7 @@ defineProps<{
             }"
             >
                 <SwiperSlide v-for="slide in contentData" :key="slide.id">
-                    <SwiperCard :data="slide"/>
+                    <SwiperCard :data="slide" :button-title="buttonTitle"/>
                 </SwiperSlide>
             </Swiper>
         </div>

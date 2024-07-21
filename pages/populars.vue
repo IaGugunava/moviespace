@@ -3,15 +3,15 @@
  * @author Ia Gugunava
  */
  import DefaultList from '~/components/DefaultList/DefaultList.vue';
- import { data } from '../data/movies'
+ import { movies } from '../data/movies'
 
-const popularData = data.slice(10, 20)
+const popularData = movies.slice(10, 20)
 
 </script>
 
 <template>
     <div>
-        <DefaultList title="popular movies" :contentData="popularData"/>
+        <DefaultList title="პოპულარული ფილმები" :contentData="popularData"/>
     </div>
 </template>
 

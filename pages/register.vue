@@ -9,7 +9,7 @@ import Register from '~/components/Register/Register.vue';
     <div class="register-page">
         <Register/>
 
-        <NuxtLink to="/login" class="login-page__link">already have an account?</NuxtLink>
+        <NuxtLink to="/login" class="login-page__link">უკვე გაქვთ ანგარიში?</NuxtLink>
 
     </div>
 </template>
@@ -20,7 +20,7 @@ import Register from '~/components/Register/Register.vue';
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 
     &__link{
         font-size: 24px;

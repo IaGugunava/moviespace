@@ -8,7 +8,7 @@ import Login from '~/components/Login/Login.vue';
 <template>
     <div class="login-page">
         <Login/>
-        <NuxtLink to="/register" class="login-page__link">or register</NuxtLink>
+        <NuxtLink to="/register" class="login-page__link">ან დარეგისტრირდით</NuxtLink>
     </div>
 </template>
 

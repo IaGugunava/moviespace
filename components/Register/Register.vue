@@ -57,11 +57,11 @@ const handleRegister = async () => {
 <template>
     <div>
         <div class="register">
-        <h3 class="register__title">register</h3>
+        <h3 class="register__title">რეგისტრაცია</h3>
 
         <div class="register__form">
             <div class="register__inputs">
-                <p class="register__label">Name</p>
+                <p class="register__label">სახელი</p>
                 <Input input-type="text" :model-value="name" @update:model-value="(e: any) => name = e"/>
             </div>
 <!-- 
@@ -76,21 +76,21 @@ const handleRegister = async () => {
             </div> -->
 
             <div class="register__inputs">
-                <p class="register__label">Email</p>
+                <p class="register__label">იმეილი</p>
                 <Input input-type="email" :model-value="email" @update:model-value="(e: any) => email = e"/>
             </div>
 
             <div class="register__inputs">
-                <p class="register__label">Password</p>
+                <p class="register__label">პაროლი</p>
                 <Input input-type="password" :model-value="password" @update:model-value="(e: any) => password = e"/>
             </div>
 
             <div class="register__inputs">
-                <p class="register__label">Repeat Password</p>
+                <p class="register__label">გაიმეორეთ პაროლი</p>
                 <Input input-type="password" :model-value="repeatPassword" @update:model-value="(e: any) => repeatPassword = e"/>
             </div>
 
-            <UiComponentsButton class="register__button" title="register" @click="handleRegister"/>
+            <UiComponentsButton class="register__button" title="რეგისტრაცია" @click="handleRegister"/>
         
         </div>
         <p v-if="message" class="register__message" :class="[{'register__message--success': success}, {'register__message--error': !success}]">{{ message }}</p>
