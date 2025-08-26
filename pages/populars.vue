@@ -3,9 +3,20 @@
  * @author Ia Gugunava
  */
  import DefaultList from '~/components/DefaultList/DefaultList.vue';
- import { movies } from '../data/movies'
 
-const popularData = movies.slice(10, 20)
+const popularData = ref(0)
+
+const getMoviesData = async () => {
+    const { data, error } = apiFetch('/movies')
+    if(error.value){
+        console.log(error.value, "error");
+        return;
+    }
+
+    popularData.value = data.value?.results;
+}
+
+getMoviesData()
 
 </script>
 

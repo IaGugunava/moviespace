@@ -9,92 +9,92 @@ import type { Database } from '~/types/database.types';
 import { movies } from '../data/movies'
 
 const router = useRouter();
-const client = useSupabaseClient<Database>()
-const user = useSupabaseUser();
+// const client = useSupabaseClient<Database>()
+// const user = useSupabaseUser();
 
 const toWatch = ref([]);
 const favorites = ref([])
 const categories = ref([]);
 
-const getMovies = async () => {
-    const { data } = await client.from('movies').select('movie_id, name').eq('user_id', user?.value?.id).order('created_at');
+// const getMovies = async () => {
+//     const { data } = await client.from('movies').select('movie_id, name').eq('user_id', user?.value?.id).order('created_at');
 
-    const favs = await client.from('movies').select('movie_id').eq('name', 'favorites').order('created_at');
-    const watchs = await client.from('movies').select('movie_id').eq('name', 'towatch').order('created_at');
+//     const favs = await client.from('movies').select('movie_id').eq('name', 'favorites').order('created_at');
+//     const watchs = await client.from('movies').select('movie_id').eq('name', 'towatch').order('created_at');
 
-    let temp: any[] = [];
-    let tempfavMovies: any[] = []
-    let tempwatchMovies: any[] = []
+//     let temp: any[] = [];
+//     let tempfavMovies: any[] = []
+//     let tempwatchMovies: any[] = []
 
-    if(!data.length) return;
+//     if(!data.length) return;
 
-    data.forEach((el: any) => {
-        // @ts-ignore
-        temp.push(el?.name)
+//     data.forEach((el: any) => {
+//         // @ts-ignore
+//         temp.push(el?.name)
 
-    });
-    // @ts-ignore
-    categories.value = [...new Set(temp)]
-    if(favs.data.length){
-        tempfavMovies = [...favs.data]
+//     });
+//     // @ts-ignore
+//     categories.value = [...new Set(temp)]
+//     if(favs.data.length){
+//         tempfavMovies = [...favs.data]
 
-        tempfavMovies.forEach((el) => {
-            movies.forEach((e: any) => {
-                if(e.id === el.movie_id){
-                    // @ts-ignore
-                    favorites.value.push(e)
-                }
-            })
-        })
-    }
+//         tempfavMovies.forEach((el) => {
+//             movies.forEach((e: any) => {
+//                 if(e.id === el.movie_id){
+//                     // @ts-ignore
+//                     favorites.value.push(e)
+//                 }
+//             })
+//         })
+//     }
 
-    if(watchs.data.length){
-        tempwatchMovies = [...watchs.data]
+//     if(watchs.data.length){
+//         tempwatchMovies = [...watchs.data]
 
-        tempwatchMovies.forEach((el) => {
-            movies.forEach((e: any) => {
-                if(e.id === el.movie_id){
-                    // @ts-ignore
-                    toWatch.value.push(e)
-                }
-            })
-        })
-    }
-}
+//         tempwatchMovies.forEach((el) => {
+//             movies.forEach((e: any) => {
+//                 if(e.id === el.movie_id){
+//                     // @ts-ignore
+//                     toWatch.value.push(e)
+//                 }
+//             })
+//         })
+//     }
+// }
 
-const logout = async () => {
-    try{
-        const { error } = await client.auth.signOut();
-        if(error) throw error;
-        router.push("/")
-    } catch(error){
-        console.log(error);
-    } finally{
-        console.log("~")
-    }
-}
+// const logout = async () => {
+//     try{
+//         const { error } = await client.auth.signOut();
+//         if(error) throw error;
+//         router.push("/")
+//     } catch(error){
+//         console.log(error);
+//     } finally{
+//         console.log("~")
+//     }
+// }
 
 // const addMovie = async () => {
 
 // }
 
-onMounted(() => {
-    if(!user.value){
-        router.push("/login")
-    }
+// onMounted(() => {
+//     if(!user.value){
+//         router.push("/login")
+//     }
 
-    getMovies();
+//     getMovies();
 
-})
+// })
 </script>
 
 <template>
     <div class="profile">
         <div class="container">
-            <p>{{ user?.email }}</p>
-            <p>{{ user?.user_metadata?.first_name }}</p>
+            <!-- <p>{{ user?.email }}</p>
+            <p>{{ user?.user_metadata?.first_name }}</p> -->
             
-            <UiComponentsButton class="profile__logout" title="logout" @click="logout"/>
+            <!-- <UiComponentsButton class="profile__logout" title="logout" @click="logout"/> -->
         </div>
         <!-- <UiComponentsButton class="profile__add" title="add movie" @click="addMovie"/> -->
 

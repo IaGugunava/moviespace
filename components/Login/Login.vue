@@ -5,41 +5,41 @@
 import Input from '../UiComponents/Input.vue';
 
 const router = useRouter();
-const client = useSupabaseClient();
+// const client = useSupabaseClient();
 
 const email: Ref<string | null | Object> = ref("");
 const password: Ref<string | null | Object> = ref("");
 const message = ref("");
 const success = ref(false);
 
-const handleLogin = async () => {
+// const handleLogin = async () => {
 
-    try{
-        const { error } = await client.auth.signInWithPassword({
-            email: email.value,
-            password: password.value
-        });
-        if(error) {
-            message.value = error.message;
-            success.value = false;
-        } else {
-            message.value = "check your email";
-            success.value = true;
-        }
+//     try{
+//         const { error } = await client.auth.signInWithPassword({
+//             email: email.value,
+//             password: password.value
+//         });
+//         if(error) {
+//             message.value = error.message;
+//             success.value = false;
+//         } else {
+//             message.value = "check your email";
+//             success.value = true;
+//         }
 
-        router.push("/profile");
-    } catch(error: any){
-        message.value = error.message;
-        console.log(error)
-    } finally{
-        console.log("!")
-    }
+//         router.push("/profile");
+//     } catch(error: any){
+//         message.value = error.message;
+//         console.log(error)
+//     } finally{
+//         console.log("!")
+//     }
 
-   setTimeout(() => {
-    email.value = "";
-    password.value = "";
-   }, 3000)
-}
+//    setTimeout(() => {
+//     email.value = "";
+//     password.value = "";
+//    }, 3000)
+// }
 
 </script>
 
@@ -58,7 +58,7 @@ const handleLogin = async () => {
                 <Input input-type="password" :model-value="password" @update:model-value="(e: any) => password = e"/>
             </div>
 
-            <UiComponentsButton class="login__button" title="შესვლა" @click="handleLogin"/>
+            <!-- <UiComponentsButton class="login__button" title="შესვლა" @click="handleLogin"/> -->
         </div>
         <p v-if="message" class="login__message" :class="[{'login__message--success': success}, {'login__message--error': !success}]">{{ message }}</p>
 

@@ -13,7 +13,7 @@ const emit = defineEmits<{
   (e: "closeModal"): void;
 }>();
 
-const client = useSupabaseClient<Database>();
+// const client = useSupabaseClient<Database>();
 
 const category = ref();
 const categories = reactive([
@@ -21,27 +21,27 @@ const categories = reactive([
     {name: 'ფავორიტი', active: false, value: 'favorites' }
 ])
 
-const addMovie = async () => {
-    if(!category?.value) return;
+// const addMovie = async () => {
+//     if(!category?.value) return;
 
-    try{
-        const { data } = await client.from('movies').upsert({
-            user_id: props?.userId,
-            movie_id: props?.movieId,
-            name: category?.value
-        })
-    } catch(error) {
-        console.log(error)
-    } finally {
-        console.log("@")
-    }
+//     try{
+//         const { data } = await client.from('movies').upsert({
+//             user_id: props?.userId,
+//             movie_id: props?.movieId,
+//             name: category?.value
+//         })
+//     } catch(error) {
+//         console.log(error)
+//     } finally {
+//         console.log("@")
+//     }
 
-    category.value = null
+//     category.value = null
 
-    setTimeout(() => {
-        emit('closeModal')
-    }, 3000)
-}
+//     setTimeout(() => {
+//         emit('closeModal')
+//     }, 3000)
+// }
 
 watch(
     categories, 
@@ -71,7 +71,7 @@ watch(
                 <!-- <Input input-type="email" :model-value="category" @update:model-value="(e: any) => category = e"/> -->
             </div>
 
-            <UiComponentsButton class="adding-modal__button" title="დაამატე ფილმი" @click="addMovie"/>
+            <!-- <UiComponentsButton class="adding-modal__button" title="დაამატე ფილმი" @click="addMovie"/> -->
         </div>
         <!-- <p v-if="message" class="adding-modal__message" :class="[{'adding-modal__message--success': success}, {'adding-modal__message--error': !success}]">{{ message }}</p> -->
 

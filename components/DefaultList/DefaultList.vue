@@ -29,7 +29,7 @@ defineProps<{
 
 <style lang="scss">
 .default-list{
-    margin: 90px 0;
+    margin: 50px 0;
     &__title{
         color: $starlightWhite;
         font-size: 44px;

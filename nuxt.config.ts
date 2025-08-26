@@ -2,7 +2,13 @@
 export default defineNuxtConfig({
   css: ["~/assets/styles/main.scss"],
   devtools: { enabled: true },
-  modules: ['nuxt-swiper', "@nuxtjs/supabase"],
+  modules: ['nuxt-swiper', "@nuxt/image", '@pinia/nuxt'],
+  runtimeConfig: {
+    public: {
+      NUXT_PUBLIC_BASE_URL: process.env.NUXT_PUBLIC_BASE_URL,
+      NUXT_PUBLIC_WEBSITE_URL: process.env.NUXT_PUBLIC_WEBSITE_URL
+    }
+  },
   vite: {
     assetsInclude: ["**/*.html"],
     css: {
@@ -16,15 +22,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  supabase: {
-    redirect: false,
-    redirectOptions: {
-      login: '/login',
-      callback: '/confirm',
-      include: undefined,
-      exclude: [],
-      cookieRedirect: false,
-    }
-  
-  }
+  pinia: {
+    storesDirs: ["./stores/**"]
+  },
 })

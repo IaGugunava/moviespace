@@ -3,42 +3,37 @@
  * @author Ia Gugunava
  */
 import DefaultList from '~/components/DefaultList/DefaultList.vue';
-import { movies } from '../data/movies';
+// import { movies } from '../data/movies';
 import { useRoute } from 'vue-router';
+import { useGlobalStore } from '~/store/globalStore.js';
 
 const route = useRoute()
 
-const searched = computed(() => route.query.searchText)
+const globalStore = useGlobalStore()
 
-const foundData = ref();
+const searched = computed(() => route.query.search)
 
-const searchForFilms = async (text: string) => {
-    setTimeout(() => {
-        foundData.value = movies.filter((el) => el.name.includes(text))
-    }, 500)
-}
+const foundData = computed(() => globalStore.searchedMovies);
 
-onMounted(() => {
-    searchForFilms(searched.value?.toString()!)
-})
-
-watch(
-    () => searched,
-    (n) => {
-        searchForFilms(n.value?.toString()!);
-    }, 
-    {
-        deep: true,
-    }
-)
 </script>
 
 <template>
-    <div>
-        <DefaultList :title="`შედეგები: ${searched}`" :contentData="foundData"/>
+    <div class="search">
+        <DefaultList v-if="foundData?.length" :title="`შედეგები: ${searched}`" :contentData="foundData"/>
+        <div v-else class="search--error">ფილმი ვერ მოიძებნა</div>
     </div>
 </template>
 
 <style lang="scss">
-
+.search{
+     &--error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+    margin-top: 50px;
+    color: red;
+  }
+}
 </style>

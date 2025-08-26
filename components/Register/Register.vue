@@ -4,7 +4,7 @@
  */
  import Input from '../UiComponents/Input.vue';
 
-const client = useSupabaseClient();
+// const client = useSupabaseClient();
 
 const name: Ref<string | null | Object> = ref("");
 // const surname: Ref<string | null | Object> = ref("");
@@ -15,43 +15,43 @@ const repeatPassword: Ref<string | null | Object> = ref("");
 const message = ref("");
 const success = ref(false);
 
-const handleRegister = async () => {
+// const handleRegister = async () => {
     
-    try{
-        const { data, error } = await client.auth.signUp({
-            email: email.value,
-            password: password.value,
-            options: {
-                data: {
-                    first_name: name.value,
-                }
-            }
-        })
+//     try{
+//         const { data, error } = await client.auth.signUp({
+//             email: email.value,
+//             password: password.value,
+//             options: {
+//                 data: {
+//                     first_name: name.value,
+//                 }
+//             }
+//         })
 
-        if(error) {
-            message.value = error.message;
-            success.value = false;
-        } else {
-            message.value = "check your email";
-            success.value = true;
-        }
+//         if(error) {
+//             message.value = error.message;
+//             success.value = false;
+//         } else {
+//             message.value = "check your email";
+//             success.value = true;
+//         }
 
-    } catch(error: any){
-        console.log(error)
-        message.value = error.message;
-    } finally{
-        console.log("?")
-    }
+//     } catch(error: any){
+//         console.log(error)
+//         message.value = error.message;
+//     } finally{
+//         console.log("?")
+//     }
 
-   setTimeout(() => {
-    name.value = "";
-    email.value = "";
-    password.value = "";
-    repeatPassword.value = "";
-    message.value = "";
-    success.value = false;
-   }, 3000)
-}
+//    setTimeout(() => {
+//     name.value = "";
+//     email.value = "";
+//     password.value = "";
+//     repeatPassword.value = "";
+//     message.value = "";
+//     success.value = false;
+//    }, 3000)
+// }
 </script>
 
 <template>
@@ -90,7 +90,7 @@ const handleRegister = async () => {
                 <Input input-type="password" :model-value="repeatPassword" @update:model-value="(e: any) => repeatPassword = e"/>
             </div>
 
-            <UiComponentsButton class="register__button" title="რეგისტრაცია" @click="handleRegister"/>
+            <!-- <UiComponentsButton class="register__button" title="რეგისტრაცია" @click="handleRegister"/> -->
         
         </div>
         <p v-if="message" class="register__message" :class="[{'register__message--success': success}, {'register__message--error': !success}]">{{ message }}</p>

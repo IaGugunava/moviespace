@@ -4,35 +4,33 @@
  */
 import StarsRating from './StarsRating.vue';
 import AddingModal from '../AddingModal/AddingModal.vue';
-import { getSingleUrl } from '~/composables/helpers';
-import type { Database } from '~/types/database.types';
+import { getSingleUrl } from '~/composables/helpers.js';
 
 const props = defineProps<{
   data: any,
   buttonTitle?: string
 }>();
 
-const client = useSupabaseClient<Database>()
-const user = useSupabaseUser();
+// const user = useSupabaseUser();
 
 const isModalOpen = ref(false);
 
-const deleteMovie = async () => {
-    console.log(props?.data?.id)
+// const deleteMovie = async () => {
+//     console.log(props?.data?.id)
 
-    await client.from('movies').delete().match({ movie_id: props?.data?.id })
+//     await client.from('movies').delete().match({ movie_id: props?.data?.id })
 
-    // const { data, error } = await client.from('movies').upsert({
-    //     user_id: user.value.id,
-    //     name: "favorites",
-    //     movie_id: props.data?.id
-    // })
+//     // const { data, error } = await client.from('movies').upsert({
+//     //     user_id: user.value.id,
+//     //     name: "favorites",
+//     //     movie_id: props.data?.id
+//     // })
 
-    // if(error){
-    //     console.log(error);
-    // }
+//     // if(error){
+//     //     console.log(error);
+//     // }
     
-}
+// }
 
 // console.log(user.value?.id, "~~~~~~~~~~~~~~~~~~~~");
 
@@ -45,7 +43,7 @@ const deleteMovie = async () => {
 <template>
     <div @click="getSingleUrl(data)" class="swiper-card">
         <div class="wrapper">
-            <img class="swiper-card__image" :src="data?.poster"/>
+            <NuxtImg class="swiper-card__image" :src="`https://${data?.poster}`"/>
         </div>
 
         <div class="swiper-card__title">
@@ -57,14 +55,14 @@ const deleteMovie = async () => {
 
             <p>{{ data?.rating }}</p>
         </div>
-        <UiComponentsButton class="swiper-card__button" v-if="user && !buttonTitle" title="დაამატე ფილმი" @click.stop="isModalOpen = true"/>
-        <UiComponentsButton class="swiper-card__button" v-if="user && buttonTitle" :title="buttonTitle" @click.stop="deleteMovie"/>
+        <!-- <UiComponentsButton class="swiper-card__button" v-if="user && !buttonTitle" title="დაამატე ფილმი" @click.stop="isModalOpen = true"/>
+        <UiComponentsButton class="swiper-card__button" v-if="user && buttonTitle" :title="buttonTitle" @click.stop="deleteMovie"/> -->
     </div>
 
     <Teleport to="body">
         <Transition name="fade">
             <UiComponentsBaseModal v-if="isModalOpen" title="დაამატე ფილმი" @close="isModalOpen = false">
-                <AddingModal :user-id="user?.id" :movie-id="data?.id" @close-modal="isModalOpen = false"/>
+                <!-- <AddingModal :user-id="user?.id" :movie-id="data?.id" @close-modal="isModalOpen = false"/> -->
             </UiComponentsBaseModal>
         </Transition>
     </Teleport>

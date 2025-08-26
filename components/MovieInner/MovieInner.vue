@@ -5,36 +5,46 @@
 import StarsRating from '../UiComponents/StarsRating.vue';
 import Genres from '../Genres/Genres.vue';
 
-defineProps<{
-  data: any;
+const props = defineProps<{
+  moviesData: any;
+  genresData: any;
 }>();
+
+// const genresFilter = computed(() => {
+//     let res: any[] = []
+//     props.moviesData?.genreIds.forEach((el: any, index: number) => {
+//       res = props?.genresData?.filter((element: any) => element.id === el[index])
+//     });
+
+//     return res;
+// })
 </script>
 
 <template>
     <div class="movie-inner">
         <div class="movie-inner__image">
-            <img :src="data?.[0]?.banner"/>
+             <img :src="`https://${moviesData?.banner}`"/>
 
             <div class="img-overlay"></div>
         </div>
 
         <div class="movie-inner__content">
-            <p class="movie-inner__content-title">{{ data?.[0]?.name }}</p>
-            <StarsRating :value="data?.[0]?.rating"/>
-            <p class="movie-inner__content-description">{{ data?.[0]?.description }}</p>
+            <p class="movie-inner__content-title">{{ moviesData?.name }}</p>
+            <StarsRating :value="moviesData?.rating"/>
+            <p class="movie-inner__content-description">{{ moviesData?.description }}</p>
             <div class="movie-inner__content-infos">
                 <p>
-                    ქვეყანა: {{ data?.[0]?.country?.name }}
+                    ქვეყანა: {{ moviesData?.country?.name }}
                 </p>
                 <p>
-                    წელი: {{ data?.[0]?.year }}
+                    წელი: {{ moviesData?.year }}
                 </p>
                 <p>
-                    rating: {{ data?.[0]?.mpaaRating }}
+                    rating: {{ moviesData?.mpaaRating }}
                 </p>
             </div>
 
-            <Genres :data="data?.[0]?.genres"/>
+            <!-- <Genres :data="genresFilter"/> -->
             
         </div>
     </div>

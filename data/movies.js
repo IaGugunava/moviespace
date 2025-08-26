@@ -8,15 +8,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "1",
             "name": "საქართველო"
@@ -43,7 +34,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 2,
@@ -55,15 +49,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -91,7 +76,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 3,
@@ -103,15 +91,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -139,7 +118,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "22"
+        ]
     },
     {
         "id": 4,
@@ -150,15 +132,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "1",
             "name": "საქართველო"
@@ -185,7 +158,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "18"
+        ]
     },
     {
         "id": 5,
@@ -197,15 +173,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -233,7 +200,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "22"
+        ]
     },
     {
         "id": 6,
@@ -244,15 +214,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "1",
             "name": "საქართველო"
@@ -279,7 +240,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 7,
@@ -292,22 +256,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "3",
-                "name": "რომანტიკული",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "3",
             "name": "საფრანგეთი"
@@ -334,7 +282,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": true
+        "isGlobalComingSoon": true,
+        "genreIds": [
+            "3",
+            "6"
+        ]
     },
     {
         "id": 8,
@@ -346,15 +298,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -382,7 +325,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 9,
@@ -394,29 +340,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "3",
-                "name": "რომანტიკული",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -443,7 +366,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": true
+        "isGlobalComingSoon": true,
+        "genreIds": [
+            "1",
+            "3",
+            "6"
+        ]
     },
     {
         "id": 10,
@@ -456,29 +384,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "2",
-                "name": "ფენტეზი",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "15",
-                "name": "საშინელებათა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "38",
             "name": "ავსტრალია"
@@ -505,7 +410,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": true
+        "isGlobalComingSoon": true,
+        "genreIds": [
+            "1",
+            "2",
+            "15"
+        ]
     },
     {
         "id": 11,
@@ -518,22 +428,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -560,7 +454,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "6"
+        ]
     },
     {
         "id": 12,
@@ -573,22 +471,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "8",
-                "name": "თრილერი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "16",
-                "name": "მძაფრსიუჟეტიანი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -615,7 +497,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": true
+        "isGlobalComingSoon": true,
+        "genreIds": [
+            "8",
+            "16"
+        ]
     },
     {
         "id": 13,
@@ -628,22 +514,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -670,7 +540,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": true
+        "isGlobalComingSoon": true,
+        "genreIds": [
+            "1",
+            "6"
+        ]
     },
     {
         "id": 14,
@@ -683,15 +557,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -718,7 +583,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": true
+        "isGlobalComingSoon": true,
+        "genreIds": [
+            "6"
+        ]
     },
     {
         "id": 15,
@@ -731,29 +599,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "10",
-                "name": "კრიმინალური",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "16",
-                "name": "მძაფრსიუჟეტიანი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -780,7 +625,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": true
+        "isGlobalComingSoon": true,
+        "genreIds": [
+            "1",
+            "10",
+            "16"
+        ]
     },
     {
         "id": 16,
@@ -793,29 +643,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "11",
-                "name": "მუსიკა",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -842,7 +669,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": true
+        "isGlobalComingSoon": true,
+        "genreIds": [
+            "1",
+            "6",
+            "11"
+        ]
     },
     {
         "id": 17,
@@ -854,22 +686,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "3",
-                "name": "რომანტიკული",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -896,7 +712,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": true
+        "isGlobalComingSoon": true,
+        "genreIds": [
+            "1",
+            "3"
+        ]
     },
     {
         "id": 18,
@@ -909,29 +729,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "3",
-                "name": "რომანტიკული",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -958,7 +755,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": true
+        "isGlobalComingSoon": true,
+        "genreIds": [
+            "1",
+            "3",
+            "6"
+        ]
     },
     {
         "id": 19,
@@ -971,15 +773,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1006,7 +799,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": true
+        "isGlobalComingSoon": true,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 20,
@@ -1019,29 +815,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "3",
-                "name": "რომანტიკული",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1068,7 +841,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": true
+        "isGlobalComingSoon": true,
+        "genreIds": [
+            "1",
+            "3",
+            "6"
+        ]
     },
     {
         "id": 21,
@@ -1080,22 +858,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "10",
-                "name": "კრიმინალური",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1122,7 +884,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": true
+        "isGlobalComingSoon": true,
+        "genreIds": [
+            "6",
+            "10"
+        ]
     },
     {
         "id": 22,
@@ -1133,15 +899,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "1",
             "name": "საქართველო"
@@ -1168,7 +925,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "22"
+        ]
     },
     {
         "id": 23,
@@ -1179,29 +939,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "6724e860-22c0-11ec-9def-2f5e37edef69",
-                "name": "სათავგადასავლო",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1228,7 +965,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4",
+            "6",
+            "6724e860-22c0-11ec-9def-2f5e37edef69"
+        ]
     },
     {
         "id": 24,
@@ -1239,22 +981,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1281,7 +1007,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4",
+            "18"
+        ]
     },
     {
         "id": 25,
@@ -1292,15 +1022,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1327,7 +1048,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 26,
@@ -1338,15 +1062,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1373,7 +1088,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4"
+        ]
     },
     {
         "id": 27,
@@ -1384,22 +1102,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1426,7 +1128,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4",
+            "22"
+        ]
     },
     {
         "id": 28,
@@ -1437,15 +1143,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1472,7 +1169,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4"
+        ]
     },
     {
         "id": 29,
@@ -1483,15 +1183,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1518,7 +1209,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4"
+        ]
     },
     {
         "id": 30,
@@ -1529,29 +1223,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "19",
-                "name": "ბიოგრაფია",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1578,7 +1249,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4",
+            "19",
+            "22"
+        ]
     },
     {
         "id": 31,
@@ -1589,15 +1265,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1624,7 +1291,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4"
+        ]
     },
     {
         "id": 32,
@@ -1635,15 +1305,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1670,7 +1331,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4"
+        ]
     },
     {
         "id": 33,
@@ -1681,15 +1345,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1716,7 +1371,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4"
+        ]
     },
     {
         "id": 34,
@@ -1727,15 +1385,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1762,7 +1411,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4"
+        ]
     },
     {
         "id": 35,
@@ -1773,15 +1425,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1808,7 +1451,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4"
+        ]
     },
     {
         "id": 36,
@@ -1819,15 +1465,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1854,7 +1491,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4"
+        ]
     },
     {
         "id": 37,
@@ -1865,15 +1505,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1900,7 +1531,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4"
+        ]
     },
     {
         "id": 38,
@@ -1912,15 +1546,6 @@ export const movies = [
             "ENG"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -1947,7 +1572,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4"
+        ]
     },
     {
         "id": 39,
@@ -1958,22 +1586,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -2000,7 +1612,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4",
+            "6"
+        ]
     },
     {
         "id": 40,
@@ -2012,15 +1628,6 @@ export const movies = [
             "ENG"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -2047,7 +1654,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4"
+        ]
     },
     {
         "id": 41,
@@ -2058,22 +1668,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -2100,7 +1694,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4",
+            "22"
+        ]
     },
     {
         "id": 42,
@@ -2111,22 +1709,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -2153,7 +1735,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4",
+            "22"
+        ]
     },
     {
         "id": 43,
@@ -2164,22 +1750,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -2206,7 +1776,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4",
+            "22"
+        ]
     },
     {
         "id": 44,
@@ -2217,22 +1791,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -2259,7 +1817,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4",
+            "18"
+        ]
     },
     {
         "id": 45,
@@ -2270,15 +1832,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -2305,7 +1858,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4"
+        ]
     },
     {
         "id": 46,
@@ -2316,29 +1872,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "6724e860-22c0-11ec-9def-2f5e37edef69",
-                "name": "სათავგადასავლო",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -2365,7 +1898,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "4",
+            "6724e860-22c0-11ec-9def-2f5e37edef69"
+        ]
     },
     {
         "id": 47,
@@ -2376,15 +1914,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -2411,7 +1940,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4"
+        ]
     },
     {
         "id": 48,
@@ -2422,22 +1954,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -2464,7 +1980,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4",
+            "6"
+        ]
     },
     {
         "id": 49,
@@ -2475,22 +1995,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -2517,7 +2021,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4",
+            "6"
+        ]
     },
     {
         "id": 50,
@@ -2529,15 +2037,6 @@ export const movies = [
             "ENG"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -2564,7 +2063,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4"
+        ]
     },
     {
         "id": 51,
@@ -2576,15 +2078,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -2612,7 +2105,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "18"
+        ]
     },
     {
         "id": 52,
@@ -2624,15 +2120,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -2660,7 +2147,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 53,
@@ -2672,15 +2162,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -2708,7 +2189,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "22"
+        ]
     },
     {
         "id": 54,
@@ -2720,22 +2204,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "10",
-                "name": "კრიმინალური",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "4",
@@ -2763,7 +2231,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "10"
+        ]
     },
     {
         "id": 55,
@@ -2775,22 +2247,6 @@ export const movies = [
         ],
         "subtitles": [
             "GEO"
-        ],
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
         ],
         "country": {
             "id": "4",
@@ -2818,7 +2274,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "6"
+        ]
     },
     {
         "id": 56,
@@ -2831,15 +2291,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "4",
@@ -2867,7 +2318,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 57,
@@ -2879,15 +2333,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -2915,7 +2360,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 58,
@@ -2927,15 +2375,6 @@ export const movies = [
         ],
         "subtitles": [
             "GEO"
-        ],
-        "genres": [
-            {
-                "id": "8",
-                "name": "თრილერი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "7",
@@ -2963,7 +2402,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "8"
+        ]
     },
     {
         "id": 59,
@@ -2975,15 +2417,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "24",
-                "name": "მისტიკა",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -3011,7 +2444,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "24"
+        ]
     },
     {
         "id": 60,
@@ -3023,22 +2459,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "8",
-                "name": "თრილერი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "4",
@@ -3066,7 +2486,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "6",
+            "8"
+        ]
     },
     {
         "id": 61,
@@ -3079,22 +2503,6 @@ export const movies = [
         "subtitles": [
             "GEO",
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "3",
-                "name": "რომანტიკული",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -3122,7 +2530,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "3"
+        ]
     },
     {
         "id": 62,
@@ -3133,29 +2545,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "3",
-                "name": "რომანტიკული",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "1",
             "name": "საქართველო"
@@ -3182,7 +2571,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "3",
+            "6"
+        ]
     },
     {
         "id": 63,
@@ -3194,15 +2588,6 @@ export const movies = [
         ],
         "subtitles": [
             "RUS"
-        ],
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -3230,7 +2615,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 64,
@@ -3243,22 +2631,6 @@ export const movies = [
             "NLD"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "3",
-                "name": "რომანტიკული",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "1",
             "name": "საქართველო"
@@ -3285,7 +2657,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "3"
+        ]
     },
     {
         "id": 65,
@@ -3297,15 +2673,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "1",
             "name": "საქართველო"
@@ -3332,7 +2699,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "6"
+        ]
     },
     {
         "id": 66,
@@ -3345,22 +2715,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "3",
-                "name": "რომანტიკული",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -3388,7 +2742,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "3",
+            "6"
+        ]
     },
     {
         "id": 67,
@@ -3401,29 +2759,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "8",
-                "name": "თრილერი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "10",
-                "name": "კრიმინალური",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -3451,7 +2786,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "8",
+            "10"
+        ]
     },
     {
         "id": 68,
@@ -3462,15 +2802,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "8",
-                "name": "თრილერი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "3",
             "name": "საფრანგეთი"
@@ -3497,7 +2828,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "8"
+        ]
     },
     {
         "id": 69,
@@ -3509,15 +2843,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -3545,7 +2870,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 70,
@@ -3557,15 +2885,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -3593,7 +2912,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 71,
@@ -3605,15 +2927,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -3641,7 +2954,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 72,
@@ -3653,22 +2969,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -3696,7 +2996,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "22"
+        ]
     },
     {
         "id": 73,
@@ -3707,15 +3011,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "1",
             "name": "საქართველო"
@@ -3742,7 +3037,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "18"
+        ]
     },
     {
         "id": 74,
@@ -3754,15 +3052,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -3790,7 +3079,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "18"
+        ]
     },
     {
         "id": 75,
@@ -3801,15 +3093,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "1",
             "name": "საქართველო"
@@ -3836,7 +3119,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "18"
+        ]
     },
     {
         "id": 76,
@@ -3848,15 +3134,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -3884,7 +3161,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "18"
+        ]
     },
     {
         "id": 77,
@@ -3896,15 +3176,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -3932,7 +3203,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "18"
+        ]
     },
     {
         "id": 78,
@@ -3944,15 +3218,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -3980,7 +3245,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "18"
+        ]
     },
     {
         "id": 79,
@@ -3992,15 +3260,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -4028,7 +3287,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "18"
+        ]
     },
     {
         "id": 80,
@@ -4040,15 +3302,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -4076,7 +3329,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "18"
+        ]
     },
     {
         "id": 81,
@@ -4088,22 +3344,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -4131,7 +3371,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "18"
+        ]
     },
     {
         "id": 82,
@@ -4143,15 +3387,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -4179,7 +3414,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "18"
+        ]
     },
     {
         "id": 83,
@@ -4191,15 +3429,6 @@ export const movies = [
         ],
         "subtitles": [
             "GEO"
-        ],
-        "genres": [
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -4227,7 +3456,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "18"
+        ]
     },
     {
         "id": 84,
@@ -4239,15 +3471,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -4275,7 +3498,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "18"
+        ]
     },
     {
         "id": 85,
@@ -4287,22 +3513,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -4330,7 +3540,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "18"
+        ]
     },
     {
         "id": 86,
@@ -4342,15 +3556,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -4378,7 +3583,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 87,
@@ -4389,22 +3597,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "1",
             "name": "საქართველო"
@@ -4431,7 +3623,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "18"
+        ]
     },
     {
         "id": 88,
@@ -4443,15 +3639,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -4479,7 +3666,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "22"
+        ]
     },
     {
         "id": 89,
@@ -4491,15 +3681,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -4527,7 +3708,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "22"
+        ]
     },
     {
         "id": 90,
@@ -4539,15 +3723,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -4575,7 +3750,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "22"
+        ]
     },
     {
         "id": 91,
@@ -4587,15 +3765,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -4623,7 +3792,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "22"
+        ]
     },
     {
         "id": 92,
@@ -4635,15 +3807,6 @@ export const movies = [
         ],
         "subtitles": [
             "ENG"
-        ],
-        "genres": [
-            {
-                "id": "18",
-                "name": "მოკლემეტრაჟიანი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
         ],
         "country": {
             "id": "1",
@@ -4671,7 +3834,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "18"
+        ]
     },
     {
         "id": 93,
@@ -4684,15 +3850,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "3",
             "name": "საფრანგეთი"
@@ -4719,7 +3876,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 94,
@@ -4730,22 +3890,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "17",
-                "name": "საომარი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "1",
             "name": "საქართველო"
@@ -4772,7 +3916,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "17"
+        ]
     },
     {
         "id": 95,
@@ -4783,15 +3931,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "1",
             "name": "საქართველო"
@@ -4818,7 +3957,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 96,
@@ -4831,15 +3973,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "23",
-                "name": "შავი კომედია",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "10",
             "name": "ბელგია"
@@ -4866,7 +3999,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "23"
+        ]
     },
     {
         "id": 97,
@@ -4879,15 +4015,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "3",
             "name": "საფრანგეთი"
@@ -4914,7 +4041,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 98,
@@ -4926,29 +4056,6 @@ export const movies = [
             "ENG"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "19",
-                "name": "ბიოგრაფია",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -4975,7 +4082,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "6",
+            "19"
+        ]
     },
     {
         "id": 99,
@@ -4988,22 +4100,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "21",
-                "name": "ისტორიული",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "3",
             "name": "საფრანგეთი"
@@ -5030,7 +4126,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "21"
+        ]
     },
     {
         "id": 100,
@@ -5043,15 +4143,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "12",
             "name": "კანადა"
@@ -5078,7 +4169,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 101,
@@ -5090,15 +4184,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -5125,7 +4210,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 102,
@@ -5137,15 +4225,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "35",
             "name": "სამხ. კორეა"
@@ -5172,7 +4251,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 103,
@@ -5186,15 +4268,6 @@ export const movies = [
         "subtitles": [
             "ENG",
             "RUS"
-        ],
-        "genres": [
-            {
-                "id": "10",
-                "name": "კრიმინალური",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
         ],
         "country": {
             "id": "5",
@@ -5222,7 +4295,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "10"
+        ]
     },
     {
         "id": 104,
@@ -5234,29 +4310,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "15",
-                "name": "საშინელებათა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "26",
-                "name": "სათავგადასავლო",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -5283,7 +4336,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "15",
+            "26"
+        ]
     },
     {
         "id": 105,
@@ -5296,29 +4354,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "19",
-                "name": "ბიოგრაფია",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "21",
-                "name": "ისტორიული",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -5345,7 +4380,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "19",
+            "21"
+        ]
     },
     {
         "id": 106,
@@ -5358,29 +4398,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "13",
-                "name": "სამეცნიერო ფანტასტიკა",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "16",
-                "name": "მძაფრსიუჟეტიანი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "26",
-                "name": "სათავგადასავლო",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -5407,7 +4424,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "13",
+            "16",
+            "26"
+        ]
     },
     {
         "id": 107,
@@ -5419,22 +4441,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "19",
-                "name": "ბიოგრაფია",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -5461,7 +4467,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "19"
+        ]
     },
     {
         "id": 108,
@@ -5473,15 +4483,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -5508,7 +4509,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "6"
+        ]
     },
     {
         "id": 109,
@@ -5520,29 +4524,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "3",
-                "name": "რომანტიკული",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -5569,7 +4550,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "3",
+            "6"
+        ]
     },
     {
         "id": 110,
@@ -5581,29 +4567,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "15",
-                "name": "საშინელებათა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "24",
-                "name": "მისტიკა",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -5630,7 +4593,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "15",
+            "24"
+        ]
     },
     {
         "id": 111,
@@ -5642,15 +4610,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "5",
             "name": "დიდი ბრიტანეთი"
@@ -5679,7 +4638,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 112,
@@ -5691,15 +4653,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -5729,7 +4682,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "22"
+        ]
     },
     {
         "id": 113,
@@ -5741,15 +4697,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -5779,7 +4726,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 114,
@@ -5792,15 +4742,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -5829,7 +4770,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 115,
@@ -5841,15 +4785,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -5880,7 +4815,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 116,
@@ -5892,15 +4830,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -5930,7 +4859,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 117,
@@ -5943,15 +4875,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -5981,7 +4904,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 118,
@@ -5994,22 +4920,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -6039,7 +4949,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "6"
+        ]
     },
     {
         "id": 119,
@@ -6051,22 +4965,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "9",
-                "name": "დეტექტივი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -6096,7 +4994,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "9"
+        ]
     },
     {
         "id": 120,
@@ -6108,15 +5010,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -6146,7 +5039,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "6"
+        ]
     },
     {
         "id": 121,
@@ -6158,22 +5054,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "13",
-                "name": "სამეცნიერო ფანტასტიკა",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -6203,7 +5083,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "13"
+        ]
     },
     {
         "id": 122,
@@ -6215,15 +5099,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -6253,7 +5128,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 123,
@@ -6265,15 +5143,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -6303,7 +5172,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 124,
@@ -6316,29 +5188,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "13",
-                "name": "სამეცნიერო ფანტასტიკა",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "15",
-                "name": "საშინელებათა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -6365,7 +5214,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "13",
+            "15"
+        ]
     },
     {
         "id": 125,
@@ -6377,29 +5231,6 @@ export const movies = [
             "ENG"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "13",
-                "name": "სამეცნიერო ფანტასტიკა",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "15",
-                "name": "საშინელებათა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -6426,7 +5257,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "13",
+            "15"
+        ]
     },
     {
         "id": 126,
@@ -6438,15 +5274,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -6473,7 +5300,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 127,
@@ -6485,22 +5315,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "8",
-                "name": "თრილერი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -6527,7 +5341,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "8"
+        ]
     },
     {
         "id": 128,
@@ -6539,15 +5357,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "2",
-                "name": "ფენტეზი",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -6574,7 +5383,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "2"
+        ]
     },
     {
         "id": 129,
@@ -6586,15 +5398,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "9",
-                "name": "დეტექტივი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -6621,7 +5424,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "9"
+        ]
     },
     {
         "id": 130,
@@ -6633,15 +5439,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -6668,7 +5465,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 131,
@@ -6680,15 +5480,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -6715,7 +5506,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 132,
@@ -6727,22 +5521,6 @@ export const movies = [
             "ITA"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "8",
-                "name": "თრილერი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "9",
-                "name": "დეტექტივი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "6",
             "name": "იტალია"
@@ -6769,7 +5547,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "8",
+            "9"
+        ]
     },
     {
         "id": 133,
@@ -6781,15 +5563,6 @@ export const movies = [
             "CHN"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "13",
             "name": "ჩინეთი"
@@ -6816,7 +5589,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 134,
@@ -6828,22 +5604,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "8",
-                "name": "თრილერი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "10",
-                "name": "კრიმინალური",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -6870,7 +5630,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "8",
+            "10"
+        ]
     },
     {
         "id": 135,
@@ -6882,22 +5646,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "9",
-                "name": "დეტექტივი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "7",
             "name": "საბერძნეთი"
@@ -6924,7 +5672,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "9"
+        ]
     },
     {
         "id": 136,
@@ -6936,22 +5688,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "9",
-                "name": "დეტექტივი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -6978,7 +5714,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "9"
+        ]
     },
     {
         "id": 137,
@@ -6990,15 +5730,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -7025,7 +5756,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 138,
@@ -7037,15 +5771,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -7072,7 +5797,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 139,
@@ -7084,15 +5812,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -7119,7 +5838,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "22"
+        ]
     },
     {
         "id": 140,
@@ -7131,22 +5853,6 @@ export const movies = [
             "TR"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "3",
-                "name": "რომანტიკული",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "25",
             "name": "თურქეთი"
@@ -7173,7 +5879,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "3"
+        ]
     },
     {
         "id": 141,
@@ -7185,15 +5895,6 @@ export const movies = [
             "TR"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "25",
             "name": "თურქეთი"
@@ -7220,7 +5921,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 142,
@@ -7233,15 +5937,6 @@ export const movies = [
             "NOR"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -7268,7 +5963,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 143,
@@ -7280,29 +5978,6 @@ export const movies = [
             "DAN"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "8",
-                "name": "თრილერი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "10",
-                "name": "კრიმინალური",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -7329,7 +6004,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "8",
+            "10"
+        ]
     },
     {
         "id": 144,
@@ -7341,15 +6021,6 @@ export const movies = [
             "DAN"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "27",
             "name": "დანია"
@@ -7376,7 +6047,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 145,
@@ -7388,29 +6062,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "10",
-                "name": "კრიმინალური",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "24",
-                "name": "მისტიკა",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -7437,7 +6088,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "10",
+            "24"
+        ]
     },
     {
         "id": 146,
@@ -7449,29 +6105,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "16",
-                "name": "მძაფრსიუჟეტიანი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "26",
-                "name": "სათავგადასავლო",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -7501,7 +6134,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "16",
+            "26"
+        ]
     },
     {
         "id": 147,
@@ -7514,15 +6152,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "19",
             "name": "ისრაელი"
@@ -7549,7 +6178,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 148,
@@ -7562,22 +6194,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -7605,7 +6221,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "6",
+            "22"
+        ]
     },
     {
         "id": 149,
@@ -7617,22 +6237,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -7660,7 +6264,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "6"
+        ]
     },
     {
         "id": 150,
@@ -7672,29 +6280,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "2",
-                "name": "ფენტეზი",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "3",
-                "name": "რომანტიკული",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -7722,7 +6307,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "2",
+            "3"
+        ]
     },
     {
         "id": 151,
@@ -7735,29 +6325,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "10",
-                "name": "კრიმინალური",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "19",
-                "name": "ბიოგრაფია",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -7784,7 +6351,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "10",
+            "19"
+        ]
     },
     {
         "id": 152,
@@ -7796,22 +6368,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "19",
-                "name": "ბიოგრაფია",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -7838,7 +6394,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "19"
+        ]
     },
     {
         "id": 153,
@@ -7850,29 +6410,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "14",
-                "name": "სპორტი",
-                "description": "",
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "19",
-                "name": "ბიოგრაფია",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -7900,7 +6437,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "14",
+            "19"
+        ]
     },
     {
         "id": 154,
@@ -7912,15 +6454,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -7948,7 +6481,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 155,
@@ -7961,15 +6497,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -7996,7 +6523,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "6"
+        ]
     },
     {
         "id": 156,
@@ -8008,29 +6538,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "3",
-                "name": "რომანტიკული",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -8057,7 +6564,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "3",
+            "6"
+        ]
     },
     {
         "id": 157,
@@ -8069,29 +6581,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "10",
-                "name": "კრიმინალური",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -8118,7 +6607,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "6",
+            "10"
+        ]
     },
     {
         "id": 158,
@@ -8130,22 +6624,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "4",
-                "name": "საბავშვო და საოჯახო",
-                "description": "",
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -8172,7 +6650,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "4",
+            "6"
+        ]
     },
     {
         "id": 159,
@@ -8184,36 +6666,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "5",
-                "name": "სუპერგმირები",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "16",
-                "name": "მძაფრსიუჟეტიანი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "23",
-                "name": "შავი კომედია",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -8240,7 +6692,13 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "5",
+            "16",
+            "23"
+        ]
     },
     {
         "id": 160,
@@ -8253,22 +6711,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "10",
-                "name": "კრიმინალური",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -8297,7 +6739,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "10"
+        ]
     },
     {
         "id": 161,
@@ -8310,29 +6756,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "24",
-                "name": "მისტიკა",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -8361,7 +6784,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "6",
+            "24"
+        ]
     },
     {
         "id": 162,
@@ -8373,22 +6801,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -8417,7 +6829,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "6"
+        ]
     },
     {
         "id": 163,
@@ -8429,15 +6845,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -8467,7 +6874,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 164,
@@ -8479,22 +6889,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "3",
-                "name": "რომანტიკული",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -8523,7 +6917,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "3"
+        ]
     },
     {
         "id": 165,
@@ -8536,22 +6934,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -8580,7 +6962,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "6"
+        ]
     },
     {
         "id": 166,
@@ -8592,29 +6978,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "10",
-                "name": "კრიმინალური",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "24",
-                "name": "მისტიკა",
-                "description": "",
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -8644,7 +7007,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "10",
+            "24"
+        ]
     },
     {
         "id": 167,
@@ -8656,22 +7024,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "10",
-                "name": "კრიმინალური",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "22",
-                "name": "დოკუმენტური",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -8701,7 +7053,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "10",
+            "22"
+        ]
     },
     {
         "id": 168,
@@ -8713,15 +7069,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -8750,7 +7097,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 169,
@@ -8763,15 +7113,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -8802,7 +7143,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 170,
@@ -8814,15 +7158,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -8852,7 +7187,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 171,
@@ -8864,15 +7202,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -8902,7 +7231,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 172,
@@ -8914,15 +7246,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -8952,7 +7275,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 173,
@@ -8964,15 +7290,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9002,7 +7319,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 174,
@@ -9014,15 +7334,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9052,7 +7363,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 175,
@@ -9064,15 +7378,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9102,7 +7407,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 176,
@@ -9114,15 +7422,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9151,7 +7450,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 177,
@@ -9164,22 +7466,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "13",
-                "name": "სამეცნიერო ფანტასტიკა",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9209,7 +7495,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "6",
+            "13"
+        ]
     },
     {
         "id": 178,
@@ -9221,15 +7511,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9258,7 +7539,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 179,
@@ -9270,15 +7554,6 @@ export const movies = [
             "ENG"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9308,7 +7583,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 180,
@@ -9320,15 +7598,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9358,7 +7627,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 181,
@@ -9370,15 +7642,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9408,7 +7671,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 182,
@@ -9421,15 +7687,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9459,7 +7716,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 183,
@@ -9472,15 +7732,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9509,7 +7760,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 184,
@@ -9522,15 +7776,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9559,7 +7804,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 185,
@@ -9571,22 +7819,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9616,7 +7848,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "6"
+        ]
     },
     {
         "id": 186,
@@ -9629,15 +7865,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9667,7 +7894,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 187,
@@ -9679,15 +7909,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9717,7 +7938,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 188,
@@ -9729,15 +7953,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9767,7 +7982,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 189,
@@ -9779,15 +7997,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9817,7 +8026,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 190,
@@ -9830,15 +8042,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9868,7 +8071,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 191,
@@ -9880,15 +8086,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9918,7 +8115,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 192,
@@ -9930,29 +8130,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "8",
-                "name": "თრილერი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -9982,7 +8159,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "6",
+            "8"
+        ]
     },
     {
         "id": 193,
@@ -9994,29 +8176,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "2",
-                "name": "ფენტეზი",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "13",
-                "name": "სამეცნიერო ფანტასტიკა",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -10045,7 +8204,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "2",
+            "13"
+        ]
     },
     {
         "id": 194,
@@ -10057,15 +8221,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -10095,7 +8250,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "6"
+        ]
     },
     {
         "id": 195,
@@ -10107,22 +8265,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -10152,7 +8294,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "6"
+        ]
     },
     {
         "id": 196,
@@ -10165,15 +8311,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -10203,7 +8340,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1"
+        ]
     },
     {
         "id": 197,
@@ -10215,15 +8355,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "8",
-                "name": "თრილერი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -10254,7 +8385,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "8"
+        ]
     },
     {
         "id": 198,
@@ -10266,22 +8400,6 @@ export const movies = [
             "RUS"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "9",
-                "name": "დეტექტივი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -10310,7 +8428,11 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "9"
+        ]
     },
     {
         "id": 199,
@@ -10323,29 +8445,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "6",
-                "name": "კომედია",
-                "description": null,
-                "forKids": true,
-                "position": null
-            },
-            {
-                "id": "10",
-                "name": "კრიმინალური",
-                "description": "",
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "16",
-                "name": "მძაფრსიუჟეტიანი",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -10375,7 +8474,12 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "6",
+            "10",
+            "16"
+        ]
     },
     {
         "id": 200,
@@ -10388,22 +8492,6 @@ export const movies = [
             "GEO"
         ],
         "subtitles": null,
-        "genres": [
-            {
-                "id": "1",
-                "name": "დრამა",
-                "description": null,
-                "forKids": false,
-                "position": null
-            },
-            {
-                "id": "21",
-                "name": "ისტორიული",
-                "description": "",
-                "forKids": false,
-                "position": null
-            }
-        ],
         "country": {
             "id": "37",
             "name": "აშშ"
@@ -10433,6 +8521,10 @@ export const movies = [
         "addonId": null,
         "review": null,
         "adsEnabled": false,
-        "isGlobalComingSoon": false
+        "isGlobalComingSoon": false,
+        "genreIds": [
+            "1",
+            "21"
+        ]
     }
 ]
