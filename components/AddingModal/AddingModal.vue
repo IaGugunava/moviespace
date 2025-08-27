@@ -18,8 +18,35 @@ const emit = defineEmits<{
 const category = ref();
 const categories = reactive([
     {name: 'სანახავი', active: false, value: 'towatch' },
+    {name: 'ნანახი', active: false, value: 'watched' },
     {name: 'ფავორიტი', active: false, value: 'favorites' }
 ])
+
+const addMovie = async () => {
+    if(!category?.value) return;
+
+    console.log(sessionStorage.getItem('token'))
+
+    const { data, error } = await apiFetch(`/list/${category.value}/${props.movieId}`, {
+        method: "POST",
+        headers: {
+            authorization: `Bearer ${sessionStorage.getItem('token')}`
+        }
+    })
+
+    if(error.value){
+        console.log(error.value, "error")
+        return;
+    }
+
+    console.log(data.value)
+
+    category.value = null
+
+    setTimeout(() => {
+        emit('closeModal')
+    }, 1000)
+}
 
 // const addMovie = async () => {
 //     if(!category?.value) return;
@@ -71,7 +98,7 @@ watch(
                 <!-- <Input input-type="email" :model-value="category" @update:model-value="(e: any) => category = e"/> -->
             </div>
 
-            <!-- <UiComponentsButton class="adding-modal__button" title="დაამატე ფილმი" @click="addMovie"/> -->
+            <UiComponentsButton class="adding-modal__button" title="დაამატე ფილმი" @click="addMovie"/>
         </div>
         <!-- <p v-if="message" class="adding-modal__message" :class="[{'adding-modal__message--success': success}, {'adding-modal__message--error': !success}]">{{ message }}</p> -->
 

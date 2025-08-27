@@ -14,7 +14,7 @@ export const useConfigs = () => {
   };
 };
 
-export const apiFetch = (path, options = {}) => {
+export const apiFetch = (path, options = {}, key) => {
 
   const { apiUrl } = useConfigs();
 
@@ -24,5 +24,6 @@ export const apiFetch = (path, options = {}) => {
       baseURL: apiUrl,
       ...options
     },
+    key
   );
 };

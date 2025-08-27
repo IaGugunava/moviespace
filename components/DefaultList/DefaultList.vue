@@ -7,6 +7,7 @@ import SwiperCard from '../UiComponents/SwiperCard.vue';
 defineProps<{
   contentData: any;
   title?: string;
+  isSigned?: boolean;
 }>();
 
 </script>
@@ -20,7 +21,7 @@ defineProps<{
 
             <div class="default-list__cards">
                 <div v-for="item in contentData" class="default-list-card" :key="item.id">
-                    <SwiperCard :data="item"/>
+                    <SwiperCard :data="item" :is-signed="isSigned"/>
                 </div>
             </div>
         </div>

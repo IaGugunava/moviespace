@@ -6,36 +6,34 @@ import DefaultSlider from '~/components/DefaultSlider/DefaultSlider.vue';
 import { apiFetch } from '~/composables/helpers';
 import { useGlobalStore } from '~/store/globalStore.js';
 
-const popularData = ref(null)
 const moviesData = ref(null)
 
 const globalStore = useGlobalStore()
 
+const isUserSigned = computed(() => Boolean(sessionStorage.getItem('token')))
+
 const getMoviesData = async () => {
-    const { data, error } = apiFetch('/movies')
+    const { data, error } = await apiFetch('/movies')
     if(error.value){
         console.log(error.value, "error");
         return;
     }
 
-    popularData.value = data.value?.results;
 
     moviesData.value = data.value?.results;
 
 }
 
-getMoviesData()
-
-onMounted(() => {
-    globalStore.getGenres()
+onMounted(async () => {
+    await globalStore.getGenres()
+    await getMoviesData()
 })
 
 </script>
 
 <template>
     <div>
-        <DefaultSlider title="პოპულარული" buttonLink="/populars" :contentData="popularData"/>
-        <DefaultSlider title="ფილმები" buttonLink="/movies" :contentData="moviesData"/>
+        <DefaultSlider title="ფილმები" buttonLink="/movies" :contentData="moviesData" :is-signed="isUserSigned"/>
     </div>
 </template>
 

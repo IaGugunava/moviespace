@@ -13,30 +13,31 @@ import { useGlobalStore } from "~/store/globalStore";
 const router = useRouter();
 const route = useRoute();
 
-const globalStore = useGlobalStore()
+const globalStore = useGlobalStore();
+
+const isUserSigned = computed(() => Boolean(sessionStorage.getItem('token')))
 
 const searchText: Ref<string> = ref("");
 
-const handleSearch = async (value: string) => {
+const handleSearch = async () => {
   router.push({
     path: "/search",
     query: { search: `${searchText.value}` },
   });
 
-   const { data, error } = apiFetch('/movies', {
-        params: {
-            search: route.query?.search,
-        },
-    })
-    if(error.value){
-        console.log(error.value, "error");
-        return;
-    }
+  const { data, error } = apiFetch("/movies", {
+    params: {
+      search: route.query?.search,
+    },
+  });
+  if (error.value) {
+    console.log(error.value, "error");
+    return;
+  }
 
-    globalStore.searchedMovies = data?.value?.results;
+  globalStore.searchedMovies = data?.value?.results;
 
-    console.log()
-
+  console.log();
 
   setTimeout(() => {
     searchText.value = "";
@@ -65,18 +66,18 @@ const handleSearch = async (value: string) => {
 
     <!-- other stuff -->
     <div class="header__content">
-      <NuxtLink class="header__link" to="/populars">პოპულარული</NuxtLink>
       <NuxtLink class="header__link" to="/movies">ფილმები</NuxtLink>
       <NuxtLink class="header__link" to="/genres">ჟანრები</NuxtLink>
-      <NuxtLink class="header__link" to="/profile">პროფილი</NuxtLink>
+      <NuxtLink v-if="isUserSigned" class="header__link" to="/profile">პროფილი</NuxtLink>
       <Input
         placeholder="ძებნა..."
+        input-type="text"
         :modelValue="searchText"
         @update:modelValue="(e: string) => searchText = e"
-        @keydown.enter="handleSearch(searchText)"
+        @keydown.enter="handleSearch"
       />
-      <!-- <NuxtLink v-if="!user" class="header__link" to="/login">შესვლა</NuxtLink>
-            <UiComponentsButton v-if="user" title="log out" @click="logout"/> -->
+      <NuxtLink v-if="!isUserSigned" class="header__link" to="/login">შესვლა</NuxtLink>
+            <!-- <UiComponentsButton v-if="user" title="log out" @click="logout"/> -->
     </div>
   </div>
 </template>

@@ -10,6 +10,7 @@ defineProps<{
   title?: string;
   buttonLink?: string;
   buttonTitle?: string;
+  isSigned?: boolean;
 }>();
 
 </script>
@@ -44,7 +45,7 @@ defineProps<{
             }"
             >
                 <SwiperSlide v-for="slide in contentData" :key="slide.id">
-                    <SwiperCard :data="slide" :button-title="buttonTitle"/>
+                    <SwiperCard :data="slide" :button-title="buttonTitle" :is-signed="isSigned"/>
                 </SwiperSlide>
             </Swiper>
         </div>

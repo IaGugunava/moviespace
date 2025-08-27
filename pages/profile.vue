@@ -2,119 +2,191 @@
 /**
  * @author Ia Gugunava
  */
-import DefaultSlider from '~/components/DefaultSlider/DefaultSlider.vue';
+import DefaultSlider from "~/components/DefaultSlider/DefaultSlider.vue";
 
-import type { Database } from '~/types/database.types';
-
-import { movies } from '../data/movies'
+import { useGlobalStore } from "~/store/globalStore.js";
 
 const router = useRouter();
-// const client = useSupabaseClient<Database>()
-// const user = useSupabaseUser();
+
+const globalStore = useGlobalStore();
+
+const user = ref();
 
 const toWatch = ref([]);
-const favorites = ref([])
-const categories = ref([]);
+const watched = ref([]);
+const favorites = ref([]);
+const categories = ref([
+    {name: 'სანახავი', active: false, value: 'towatch' },
+    {name: 'ნანახი', active: false, value: 'watched' },
+    {name: 'ფავორიტი', active: false, value: 'favorites' }
+])
 
-// const getMovies = async () => {
-//     const { data } = await client.from('movies').select('movie_id, name').eq('user_id', user?.value?.id).order('created_at');
+const activeCategory = ref({name: 'ფავორიტი', active: false, value: 'favorites' });
 
-//     const favs = await client.from('movies').select('movie_id').eq('name', 'favorites').order('created_at');
-//     const watchs = await client.from('movies').select('movie_id').eq('name', 'towatch').order('created_at');
+const getUserInfo = async () => {
+  const { data, error } = await apiFetch(
+    "/auth/user",
+    {
+      headers: {
+        authorization: `Bearer ${sessionStorage.getItem("token")}`,
+      },
+    },
+    "profile"
+  );
 
-//     let temp: any[] = [];
-//     let tempfavMovies: any[] = []
-//     let tempwatchMovies: any[] = []
+  if (error.value) {
+    console.log(error.value, "error");
+    return;
+  }
 
-//     if(!data.length) return;
+  user.value = data.value;
 
-//     data.forEach((el: any) => {
-//         // @ts-ignore
-//         temp.push(el?.name)
+  console.log(user.value?.favorites, "user");
 
-//     });
-//     // @ts-ignore
-//     categories.value = [...new Set(temp)]
-//     if(favs.data.length){
-//         tempfavMovies = [...favs.data]
+  await getFavorites();
+  await getToWatch();
+  await getWatched();
+};
 
-//         tempfavMovies.forEach((el) => {
-//             movies.forEach((e: any) => {
-//                 if(e.id === el.movie_id){
-//                     // @ts-ignore
-//                     favorites.value.push(e)
-//                 }
-//             })
-//         })
-//     }
+const getFavorites = async () => {
+  const favoriteIds = user.value?.favorites || [];
 
-//     if(watchs.data.length){
-//         tempwatchMovies = [...watchs.data]
+  const { data, error } = await apiFetch("/movies/id", {
+    method: "POST",
+    body: {
+      ids: favoriteIds,
+    },
+  });
 
-//         tempwatchMovies.forEach((el) => {
-//             movies.forEach((e: any) => {
-//                 if(e.id === el.movie_id){
-//                     // @ts-ignore
-//                     toWatch.value.push(e)
-//                 }
-//             })
-//         })
-//     }
-// }
+  if (error.value) {
+    console.log(error.value, "error fetching favorite movies");
+    return;
+  }
 
-// const logout = async () => {
-//     try{
-//         const { error } = await client.auth.signOut();
-//         if(error) throw error;
-//         router.push("/")
-//     } catch(error){
-//         console.log(error);
-//     } finally{
-//         console.log("~")
-//     }
-// }
+  favorites.value = data.value || [];
+};
 
-// const addMovie = async () => {
+const getToWatch = async () => {
+  const toWatchIds = user.value?.toWatch || [];
 
-// }
+  const { data, error } = await apiFetch("/movies/id", {
+    method: "POST",
+    body: {
+      ids: toWatchIds,
+    },
+  });
 
-// onMounted(() => {
-//     if(!user.value){
-//         router.push("/login")
-//     }
+  if (error.value) {
+    console.log(error.value, "error fetching toWatch movies");
+    return;
+  }
 
-//     getMovies();
+  toWatch.value = data.value || [];
+};
 
-// })
+const getWatched = async () => {
+  const watchedIds = user.value?.watched || [];
+
+  const { data, error } = await apiFetch("/movies/id", {
+    method: "POST",
+    body: {
+      ids: watchedIds,
+    },
+  });
+
+  if (error.value) {
+    console.log(error.value, "error fetching toWatch movies");
+    return;
+  }
+
+  watched.value = data.value || [];
+};
+
+const handleLogout = () => {
+  sessionStorage.removeItem("token");
+  router.push("/login");
+};
+
+const switchCategory = (value: any) => {
+    activeCategory.value = value;
+}
+
+onMounted(() => {
+  globalStore.getUserToken();
+
+  if (!globalStore.isSigned) {
+    router.push("login");
+  }
+  getUserInfo();
+});
 </script>
 
 <template>
-    <div class="profile">
-        <div class="container">
-            <!-- <p>{{ user?.email }}</p>
-            <p>{{ user?.user_metadata?.first_name }}</p> -->
-            
-            <!-- <UiComponentsButton class="profile__logout" title="logout" @click="logout"/> -->
-        </div>
-        <!-- <UiComponentsButton class="profile__add" title="add movie" @click="addMovie"/> -->
-
-        <div class="profile__lists">
-            <div v-for="(item, index) in categories" :key="index">
-                <DefaultSlider v-if="item == 'favorites'" title="ფავორიტები" :content-data="favorites" button-title="წაშლა"/>
-                <DefaultSlider v-else title="სანახავი" :content-data="toWatch" button-title="წაშლა"/>
-                <!-- <DefaultSlider :content-data="item === 'favorites' ? favorites : toWatch" :title="item == 'favorites' ? 'ფავორიტები' : 'სანახავი'"/> -->
+  <div class="profile">
+    <div class="container">
+        <div class="profile__header">
+            <div>
+                <p class="profile__text">email: {{ user?.email }}</p>
+                <p class="profile__text">username: {{ user?.username }}</p>
             </div>
+
+            <UiComponentsButton class="profile__logout" title="გამოსვლა" @click="handleLogout" />
         </div>
+      <div class="profile__lists">
+        <div v-for="(item, index) in categories" :key="index">
+          <UiComponentsButton class="adding-modal__button" :title="item?.name" :active="item.value == activeCategory.value" @click="switchCategory(item)" />
+        </div>
+      </div>
+
     </div>
+    <DefaultSlider
+      v-if="favorites.length && activeCategory?.value === 'favorites'"
+      title="ფავორიტები"
+      :content-data="favorites"
+      button-title="წაშლა"
+    />
+    <DefaultSlider
+      v-if="toWatch.length && activeCategory?.value === 'towatch'"
+      title="სანახავი"
+      :content-data="toWatch"
+      button-title="წაშლა"
+    />
+    <DefaultSlider
+      v-if="watched.length && activeCategory?.value === 'watched'"
+      title="ნანახი"
+      :content-data="watched"
+      button-title="წაშლა"
+    />
+  </div>
 </template>
 
 <style lang="scss">
-.profile{
-    color: white;
+.profile {
+  color: white;
 
-    &__logout, &__add{
-        width: fit-content;
-        margin-top: 20px;
-    }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  &__lists {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  &__logout,
+  &__add {
+    width: fit-content;
+    margin-top: 20px;
+  }
+
+  &__text {
+    font-size: 20px;
+    margin-top: 20px;
+  }
 }
 </style>
